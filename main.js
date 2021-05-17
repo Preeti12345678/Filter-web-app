@@ -1,7 +1,7 @@
 var Nose_x=0;
 var Nose_y=0;
 function preload(){
- lipstick=loadImage('https://i.postimg.cc/PxFvYgkv/l1.png');
+ lipstick=loadImage('https://i.postimg.cc/3x3QzSGq/m.png');
 }
 function setup(){
     canvas=createCanvas(300,300);
@@ -26,7 +26,7 @@ function gotposes(results){
    if(results.length>0){
        console.log(results);
        Nose_x=results[0].pose.nose.x-20;
-       Nose_y=results[0].pose.nose.y+10;
+       Nose_y=results[0].pose.nose.y-8;
        console.log("Nose X: "+Nose_x);
        console.log("Nose y: "+Nose_y);
    }
